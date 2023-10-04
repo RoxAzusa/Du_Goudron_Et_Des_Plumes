@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Du Goudron et Des Plumes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <!-- Navigation menu -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand font" href="#">DGDP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link fw-bold active" aria-current="page" href="#">Accueil</a>
+              <a class="nav-link fw-bold" href="#tenet">Principe</a>
+              <a class="nav-link fw-bold" href="#team">L'équipe</a>
+              <a class="nav-link fw-bold" href="#newGames">Nouveautés jeux</a>
+              <a class="nav-link fw-bold" href="#contact">Nous contacter</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Global presentation section -->
+      <section>
+        <h1 class="text-center font my-5 display-1">DU GOUDRON ET DES PLUMES 🎲</h1>
+        <div id="carouselExampleIndicators" class="carousel slide mt-5 d-none d-sm-block" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/src/images/boardGames1.jpg" class="d-block w-100 carousel-img" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="d-sm-block">Faite du jeu le 25 octobre</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/src/images/boardGames2.jpg" class="d-block w-100 carousel-img" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="d-sm-block">Prochaine soirée jeu le 12 octobre</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/src/images/boardGames3.jpg" class="d-block w-100 carousel-img" alt="">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="d-sm-block">Nouveautés jeux : Ancient Knowledge</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> 
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Tenet section -->
+      <section id="tenet" class="bg-secondary pb-3">
+        <h2 class="text-center display-2 py-3 fst-italic">Le principe</h2>
+        <p class="fs-3 text-center py-3">Passer un moment convivial autour d'une table et découvrir de nouveaux jeux de sociétés.</p>
+        <div class="d-flex justify-content-around flex-wrap flex-lg-nowrap">
+          <div class="card mx-3 mb-3" style="max-width: 1080px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/src/images/when.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 d-flex align-items-center">
+                <div class="card-body">
+                  <h5 class="card-title mb-2 fs-3">
+                    Quand ça ?
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                      <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                      <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                    </svg>
+                  </h5>
+                  <p class="card-text fs-4">Le premier et troisème vendredi de chaque mois à partir de 20h30.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mx-3 mb-3" style="max-width: 1080px;">
+            <div class="row g-0 h-100">
+              <div class="col-md-4">
+                <img src="/src/images/where.jpg" class="img-fluid rounded-start h-100" alt="...">
+              </div>
+              <div class="col-md-8 d-flex align-items-center">
+                <div class="card-body">
+                  <h5 class="card-title mb-2 fs-3">
+                    Où ça ?
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-signpost-split" viewBox="0 0 16 16">
+                      <path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"/>
+                    </svg>
+                  </h5>
+                  <p class="card-text fs-4">A la salle des associations de Taninges.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center m-3">
+          <a class="btn btn-lg btn-outline-primary" href="#contact" role="button">Adhésion</a>
+        </div>
+      </section>
+
+      <!-- Team section -->
+      <section id="team" class="pb-3">
+        <h2 class="text-center display-2 py-3 fst-italic">L'équipe</h2>
+        <div class="d-flex flex-row justify-content-center flex-wrap mx-5 mt-3 mb-5">
+          <div class="col-lg-4 col-xxl-2 d-flex justify-content-center justify-content-md-start">
+            <img src="/src/images/people1.jpg" class="img-fluid rounded" alt="">
+          </div>            
+          <div class="col-lg-6 d-flex flex-column justify-content-center ps-3">
+            <h4 class="text-center py-2 fs-3">Gwenaëlle Lacueille</h4>
+            <p class="text-start fs-4">Gwenaëlle Lacueille, présidente passionnée de l'association "Du Goudron et des Plumes", incarne l'esprit convivial et ludique qui anime cette communauté de joueurs. Son dévouement inébranlable envers les jeux de société a fait de l'association un lieu de rencontre privilégié pour les amateurs de tous horizons. Sous sa direction, "Du Goudron et des Plumes" continue de prospérer en offrant un espace chaleureux où l'amitié se marie harmonieusement avec la découverte et le plaisir du jeu en société.</p>
+          </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center flex-wrap mx-5">
+          <div class="col-lg-6 d-flex flex-column justify-content-center pe-3 order-2 order-lg-1">
+            <h4 class="text-center py-2 fs-3">Christine Térencio</h4>
+            <p class="text-start fs-4">Christine Térencio, trésorière de l'association "Du Goudron et des Plumes", est une passionnée incontestable des jeux de société. Sa dévotion pour cet univers ludique se traduit non seulement par son rôle essentiel au sein de l'association en tant que trésorière, mais aussi par son enthousiasme à partager sa passion avec les autres membres. Grâce à son expertise financière et à son amour pour les jeux de société, Christine contribue à maintenir l'association florissante, permettant ainsi à tous les adhérents de continuer à savourer ensemble des moments de divertissement et de convivialité autour des jeux de société.</p>
+          </div>
+          <div class="col-lg-4 col-xxl-2 d-flex justify-content-center justify-content-md-end order-1 order-lg-2">
+            <img src="/src/images/people2.jpg" class="img-fluid rounded" alt="">
+          </div>            
+        </div>
+        <div class="d-flex justify-content-center m-3">
+          <a class="btn btn-lg btn-outline-primary" href="#contact" role="button">Nous contacter</a>
+        </div>
+      </section>
+
+      <!-- New games section -->
+      <section id="newGames" class="bg-secondary pb-4">
+        <h2 class="text-center display-2 pt-3 pb-4 fst-italic">Nouveautés jeux</h2>
+        <div class="container my-3">
+          <div class="d-flex row flex-wrap">
+            <div class="col-12 col-md-4 mb-3">
+              <div class="card d-flex flex-column h-100">
+                <img src="/src/images/game1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ancient Knowledge</h5>
+                  <p class="card-text">Vous êtes les plus anciens bâtisseurs de ce monde, les derniers héritiers d'une illustre civilisation. Utilisez vos connaissances pour que sa grandeur perdure dans le temps ! Optimisez la synergie de vos cartes et construisez des monuments étonnants pour commémorer la gloire de votre civilisation. Gagnez un maximum de points de victoire et prouvez-vous digne de vos célèbres ancêtres.</p>
+                  <p class="card-text"><small class="text-muted">Date de sortie : 29 Septembre 2023</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+              <div class="card d-flex flex-column h-100">
+                <img src="/src/images/game2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Potage Sauvage</h5>
+                  <p class="card-text">Tout le monde sait que les ratons laveurs aiment faire des soupes. C'est d'ailleurs pour cela qu'ils trempent leurs ingrédients dans des flaques d'eau ! Mais depuis qu'ils ont fait découvrir leur technique aux autres animaux, tous cherchent à créer la meilleure recette de la forêt. Le problème, c'est qu'ils cuisinent tous dans la même marmite…</p>
+                  <p class="card-text"><small class="text-muted">Date de sortie : 29 Septembre 2023</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+              <div class="card d-flex flex-column h-100">
+                <img src="/src/images/game3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Inside Job</h5>
+                  <p class="card-text">Dans ce jeu de plis « presque » coopératif, tout le monde a un rôle secret. Vous êtes, pour la plupart, des agents loyaux, mais un espion se cache bel et bien parmi vous et sabote vos efforts… Parviendrez vous à découvrir son identité ? </p>
+                  <p class="card-text"><small class="text-muted">Date de sortie : 25 Août 2023</small></p>
+                </div>
+              </div>
+            </div>       
+          </div>
+          <div class="d-flex row flex-wrap">
+            <div class="col-12 col-md-4 mb-3">
+              <div class="card d-flex flex-column h-100">
+                <img src="/src/images/game4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Break In - Chichén Itzá</h5>
+                  <p class="card-text">Explorez les pyramides et les temples de ce peuple disparu et percez leurs secrets en résolvant diverses énigmes. Parviendrez-vous à découvrir ce que cache la légende de Kukulcán, le serpent à plumes, et du dieu Jaguar ? En sortirez-vous indemne ? Où l'acheter ?</p>
+                  <p class="card-text"><small class="text-muted">Date de sortie : 10 Mars 2023</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+              <div class="card d-flex flex-column h-100">
+                <img src="/src/images/game5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hellton Palace</h5>
+                  <p class="card-text">Accueillez des hôtes infernaux et engagez des grooms pour les servir. Choisissez de ne pas satisfaire vos clients (et d'en accepter les effets négatifs) ou de les satisfaire (et d'en accepter également les effets, négatifs, mais différents). Quand les hôtes auront saccagé les lieux avec méthode et application, le dernier hôtel encore debout remportera la partie. Simple, vous voyez ? Qu'est-ce qui pourrait mal tourner ?</p>
+                  <p class="card-text"><small class="text-muted">Date de sortie : 28 Octobre 2022</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+              <div class="card d-flex flex-column h-100">
+                <img src="/src/images/game6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Break the Cube</h5>
+                  <p class="card-text">Break the Cube, c'est une course au déchiffrage, un sprint de déduction pour savoir quel joueur parviendra à démasquer ses adversaires en premier !</p>
+                  <p class="card-text"><small class="text-muted">Date de sortie : 10 Juin 2022</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="pt-3 pb-4">
+        <h2 class="text-center display-2 pt-3 pb-4 fst-italic">Nous contacter</h2>
+        <form class="col-8 m-auto">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Votre email" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Votre message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Ecrivez votre message"></textarea>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-lg btn-outline-primary">Envoyer</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <div class="col-lg-2">
+            <img src="/src/images/logoDGDP.png" class="img-fluid rounded m-3" alt="">
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-white d-lg-flex justify-content-lg-around align-items-lg-center col-md-10">
+              <a class="nav-link fw-bold active" aria-current="page" href="#">Accueil</a>
+              <span class="d-none d-lg-inline">●</span>
+              <a class="nav-link fw-bold active" href="#tenet">Principe</a>
+              <span class="d-none d-lg-inline">●</span>
+              <a class="nav-link fw-bold active" href="#team">L'équipe</a>
+              <span class="d-none d-lg-inline">●</span>
+              <a class="nav-link fw-bold active" href="#newGames">Nouveautés jeux</a>
+              <span class="d-none d-lg-inline">●</span>
+              <a class="nav-link fw-bold active" href="#contact">Nous contacter</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+// Override boostrap properties
+.carousel-caption {
+    bottom: 40%;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.642);
+}
+
+.btn {
+    background-color: #ffffff;
+}
+
+// Create my properties
+.font {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.carousel-img {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    opacity: 0.9;
+}
